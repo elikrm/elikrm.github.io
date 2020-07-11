@@ -1,0 +1,325 @@
+/* ---------------------------------------------------
+                     COLOR GUIDE
+
+ORANGE: rgb(230, 170, 119)
+BROWN: rgb(194, 121, 88)
+PINK: rgb(225,174,153)
+      rgb(228,207,190)
+GREEN: rgb(157,150,106)
+
+
+----------------------------------------------------*/
+
+/* ---------------------------------------------------
+                      GLOBAL STYLES
+----------------------------------------------------*/
+/* For debugging 🐞*/
+/* body * {
+    border: 1px solid #3e3e3e;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;600;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+section, article, aside, footer, header, nav {
+  display: block;
+}
+h1, h2, h3, h4, h4, h5, h6 {
+  /* font-family: 'Raleway', sans-serif; */
+  font-family: 'OCR A Std', monospace;
+  color: #343434;
+}
+
+p, a, label, button {
+  font-family: 'Indie flower', sans-serif;
+  color: #343434;
+}
+
+h1#page-title {
+  font-size: 48px;
+  padding: 24px;
+}
+
+h2 {
+  font-size: 36px;
+  margin: 12px 24px;
+}
+
+h4 {
+  font-size: 18px;
+  margin: 12px 24px;
+}
+
+p {
+  font-weight: normal;
+  margin: 12px 24px;
+  font-size: 19px;
+}
+
+a {
+  font-size: 18px;
+  text-decoration: none;
+}
+
+li {
+  font-weight: 100;
+  font-size: large;
+}
+
+label, button {
+  font-size: 24px;
+}
+/* end of font size */
+/* #homepage-nav-bar{
+    color: #f7e5d3;
+}
+nav#homepage-nav-bar.nav-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 48px;
+    padding-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.nav-right{
+  display: flex;
+  flex-direction: row;
+}
+nav li {
+	display: inline-block;
+	margin: 1em;
+}
+nav a {
+	font-weight: 900;
+	text-decoration: none;
+	padding: .5em;
+	text-transform: uppercase;
+	color: rgb(83, 49, 49);
+	font-size: .8rem;
+}
+nav a:hover,
+nav a:focus {
+	color: rgb(194, 121, 88);
+} */
+/* Contact file */
+
+.contact-header {
+  border-bottom: 2px solid #FDDC5C;
+  text-align: center;
+}
+
+form {
+  margin: 50px auto;
+  width: 90%;
+}
+
+.form-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.form-item label {
+  flex-basis: 150px;
+  font-size: 22px;
+}
+
+.form-item input,
+.form-item textarea {
+  flex-basis: 50%;
+  border: 2px solid #FDDC5C;
+}
+
+.form-item input:hover,
+.form-item textarea:hover {
+  border: 2px solid #FA4224;
+}
+
+.form-item input,
+.form-item textarea,
+.form-item button {
+  border: 2px solid #FDDC5C;
+  background-color: #FFF;
+  padding: 5px;
+  font-size: 18px;
+}
+
+.form-item button:hover {
+  border: 2px solid #FA4224;
+  background-color: #FA4224;
+  color: #FFF;
+}
+
+.form-item button {
+  width: 100px;
+}
+.logo{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-content: center;
+  border: 2px solid  #FDDC5C;
+  border-radius: 50px 20px;
+}
+.about-images img{
+  display:flex;
+  flex-direction: column;
+  width:"1";
+  height: "1";
+  border: 2px solid  #FDDC5C;
+  border-radius: 50px 20px;
+
+}
+/* ---------------------------------------------------
+                      Global Footer Styles
+----------------------------------------------------*/
+footer{
+  padding: 10px 0;
+}
+  footer h4{
+    text-transform: uppercase;
+  }
+  footer p{
+    margin: 0;
+  }
+/* ---------------------------------------------------
+                      BackGrounds
+----------------------------------------------------*/
+body.home-body{ 
+  display:flex;
+  flex-direction: column;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.75), 
+      rgba(255, 255, 255, 0.75)
+    ), url(images/workout_sunset.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /* background-position: right top; */
+  border-radius: 25px;
+}
+body.home-contact{ 
+  display:flex;
+  flex-direction: column;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.75), 
+      rgba(255, 255, 255, 0.75)
+    ), url(images/Beautiful_Organic.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /* background-position: right top; */
+  border-radius: 25px;
+}
+body.home-about{ 
+  display:flex;
+  flex-direction: column;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5), 
+      rgba(255, 255, 255, 0.5)
+    ), url(images/Summer_Illustration2.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /* background-position: right top; */
+  border-radius: 25px;
+}
+body.home-MyWork{ 
+  display:flex;
+  flex-direction: column;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5), 
+      rgba(255, 255, 255, 0.5)
+    ), url(images/Disc.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /* background-position: right top; */
+  border-radius: 25px;
+}
+/* ---------------------------------------------------
+                MAIN NAVIGATION STYLES
+----------------------------------------------------*/
+
+.main-navigation ul {
+  padding-left: 0;
+}
+
+.main-navigation li {
+  list-style: none;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.main-navigation a {
+  display: block;
+  padding: 15px 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: rgba(67,67,67,0.17);
+  color: rgb(180,180,180);
+}
+
+  .main-navigation a:visited {
+    color: rgb(106,106,106);
+  }
+
+  .main-navigation a:hover {
+    color: rgb(8, 211, 18);
+    transition: .5s color;
+    background: rgba(62, 61, 61, 0.51);
+  }
+
+  .main-navigation a:active {
+    color: rgb(172,140,71);
+  }
+
+@media screen and (min-width: 750px){
+  
+  .main-navigation {
+    min-height: 100px;
+    border-top: 1px solid rgb(36,36,36);
+    border-bottom: 1px solid rgb(36,36,36);
+  } /* media query for 750px  */
+  
+  .main-navigation ul {
+    max-width: 950px;
+    margin: 0 auto;
+  }
+  
+    .main-navigation li {
+      float: left;
+      margin-left: 20px;
+      width: 20%;
+    }
+  
+    .main-navigation a {
+      background: none;
+    }
+  
+      .main-navigation a:hover {
+        background: none;
+      }
+} /* media query for 750px  */
+
+@media screen and (min-width: 880px){
+  
+  .main-navigation ul {
+    position: relative;
+    right: -30px ;
+  }
+  
+}/* media query for 880px  */
