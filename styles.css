@@ -133,14 +133,14 @@ label, button {
 .MyWork-page .featured-info ul {
   font-style: italic;
 }
-
+/* 
 .MyWork-page .featured-info {
- /* float: none; */
+ float: none;
  text-align: center;
  max-width: 400px;
  margin-left: auto;
  margin-right: auto;
-}
+} */
 .MyWork-page footer{
   display: block;
   text-align: left;
@@ -170,6 +170,29 @@ label, button {
     width: 30%;
   }
 }
+/* ---------------------------------------------------
+                      BUTTON STYLES
+----------------------------------------------------*/
+.button {
+  background-color: rgb(172,140,71);
+  border-radius: 8px;
+  max-width: 250px;
+}
+
+  .button a {
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    font-style: normal;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    padding: 10px 0;
+  }
+
+  .button a:hover {
+    background-color: rgb(119, 97, 48);
+    border-radius: 8px;
+  }
 /* ---------------------------------------------------
                       FORM STYLES
 ----------------------------------------------------*/
@@ -220,6 +243,19 @@ form {
   width: 100px;
 }
 /* ---------------------------------------------------
+                      CONTACT ICON STYLES
+----------------------------------------------------*/
+.icon-contact img{
+  max-width: 30px;
+  min-width: 10px;
+  margin-top: 10px;
+}
+.icon-contact{
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+}
+/* ---------------------------------------------------
                       LOGO STYLES
 ----------------------------------------------------*/
 .logo-center{
@@ -227,9 +263,7 @@ form {
   display: flex;
   flex-direction: column;
   text-align: center;
-  /* align-content: center; */
-  justify-content: center;
-
+  justify-content: start;
 }
 .logo{
   border: 2px solid  #FDDC5C;
@@ -316,6 +350,40 @@ body.home-MyWork{
   /* background-position: right top; */
   border-radius: 25px;
 }
+/* ---------------------------------------------------
+                SKILL BAR STYLES
+----------------------------------------------------*/
+/* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.skill-container {
+  width: 100%; /* Full width */
+  background-color: #ddd; /* Grey background */
+  border-radius: 20px;
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 3px; /* Add top padding */
+  padding-bottom: 3px; /* Add bottom padding */
+  text-align: center;
+  color: white; /* White text color */
+  border-radius: 20px;
+}
+/* ORANGE: rgb(230, 170, 119)
+BROWN: rgb(194, 121, 88)
+PINK: rgb(225,174,153)
+      rgb(228,207,190)
+GREEN: rgb(157,150,106) */
+.C {width: 90%; background-color: rgb(225,174,153);} /* Green */
+.python {width: 80%; background-color: rgb(157,150,106,0.75);} /* Green */
+.git {width: 100%; background-color: rgb(252, 193, 144);} /* Green */
+.Cplus {width: 60%; background-color: rgb(230, 170, 119);} /* Green */
+.html {width: 50%; background-color: rgb(194, 121, 88,0.75);} /* Blue */
+.css {width: 50%; background-color: #86c6fa;} /* Blue */
+.React {width: 0%; background-color: #808080;} /* Dark Grey */
+.Django {width: 0%; background-color: #808080;} /* Dark Grey */
 /* ---------------------------------------------------
                 MAIN NAVIGATION STYLES
 ----------------------------------------------------*/
