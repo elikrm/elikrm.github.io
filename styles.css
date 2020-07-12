@@ -162,11 +162,16 @@ form {
 .form-item button {
   width: 100px;
 }
-.logo{
+.logo-center{
+
   display: flex;
   flex-direction: column;
   text-align: center;
-  align-content: center;
+  /* align-content: center; */
+  justify-content: center;
+
+}
+.logo{
   border: 2px solid  #FDDC5C;
   border-radius: 50px 20px;
 }
@@ -184,6 +189,7 @@ form {
 ----------------------------------------------------*/
 footer{
   padding: 10px 0;
+  border-top: 1px solid rgb(36,36,36);
 }
   footer h4{
     text-transform: uppercase;
@@ -228,7 +234,7 @@ body.home-about{
   background: linear-gradient(
       rgba(255, 255, 255, 0.5), 
       rgba(255, 255, 255, 0.5)
-    ), url(images/Summer_Illustration2.png) no-repeat center center fixed; 
+    ), url(images/Summer_Illustration.png) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
