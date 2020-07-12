@@ -34,10 +34,38 @@
             </p>
         </div>
 
-        <div class="about-images">
+        <div class="carousel">
+            <button class="carousel__button carousel__button--left is-hidden">
+                <img src="images/left.svg" alt="">
+            </button>
+            <div class="carousel__track-container">
+                <ul class="carousel__track">
+                    <li class="carousel__slide current-slide">
+                        <img class="carousel__image" src="images/temperatureFan.jpg" alt="">
+                    </li>
+                    <li class="carousel__slide">
+                        <img class="carousel__image" src="images/snakeGame.png" alt="">
+                    </li>
+                    <li class="carousel__slide">
+                        <img class="carousel__image" src="images/Robot.jpg" alt="">
+                    </li>
+                </ul>
+            </div>
+            <button class="carousel__button carousel__button--right">
+                <img src="images/right.svg" alt="">
+            </button>
+            <div class="carousel__nav">
+                <button class="carousel__indicator current-slide"></button>
+                <button class="carousel__indicator"></button>
+                <button class="carousel__indicator"></button>
+            </div>
+        </div>
+        <script src="Carousel.js"></script>
+
+        <!-- <div class="about-images">
             <img src="images/Robot.jpg" alt="LineFollower Robot">
             <img src="images/SnakeGame.png" alt="Snake Game">
-        </div>
+        </div> -->
         <div class="featured-info">
             <h3>A musical Snake Game including:</h3>
             <ul>
@@ -61,9 +89,9 @@
         </div>
 
         <div class="featured-info">
-            <h3>My Portfolio Website</h3>
-            <p>As the part of She Codes Plus Cohort, I learned how to go from basic HTML and CSS knowledge and created
-                my portfolio responsive website from the ground up using a mobile-first approach.
+            <h3>Fan Speed Controlled by Temperature</h3>
+            <p>I designed a way to automatically control the speed of a DC fan according to the temperature read 
+                by a LM35 sensor using the concept of the PWM and analog write.
             </p>
         </div>
         <footer>
