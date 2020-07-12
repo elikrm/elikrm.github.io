@@ -20,7 +20,19 @@ GREEN: rgb(157,150,106)
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;600;800;900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
-
+body{
+  padding: 2% 6% 6% 6%;
+}
+@media screen and (min-width: 750px){
+  body {
+    font-size: 1.4em;
+  }
+} /* media query for 750px  */
+.container {
+  background: rgb(194, 121, 88); /* IE8 */
+  background: rgb(194, 121, 88,0.3);
+  padding: 30px;
+}
 section, article, aside, footer, header, nav {
   display: block;
 }
@@ -34,7 +46,14 @@ p, a, label, button {
   font-family: 'Indie flower', sans-serif;
   color: #343434;
 }
-
+p {
+  font-size: 1em;
+  line-height: 1.4211em;
+  margin-top: 1.4211em;
+  margin-bottom: 0;
+  font-weight: 100;
+  max-width: 700px;
+}
 h1#page-title {
   font-size: 48px;
   padding: 24px;
@@ -62,6 +81,7 @@ a {
 }
 
 li {
+  font-family: 'Indie flower', sans-serif;
   font-weight: 100;
   font-size: large;
 }
@@ -69,53 +89,90 @@ li {
 label, button {
   font-size: 24px;
 }
-/* end of font size */
-/* #homepage-nav-bar{
-    color: #f7e5d3;
-}
-nav#homepage-nav-bar.nav-bar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 48px;
-    padding-top: 12px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-nav ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-.nav-right{
-  display: flex;
-  flex-direction: row;
-}
-nav li {
-	display: inline-block;
-	margin: 1em;
-}
-nav a {
-	font-weight: 900;
-	text-decoration: none;
-	padding: .5em;
-	text-transform: uppercase;
-	color: rgb(83, 49, 49);
-	font-size: .8rem;
-}
-nav a:hover,
-nav a:focus {
-	color: rgb(194, 121, 88);
-} */
-/* Contact file */
+@media screen and (min-width: 750px) {
+  
+  .landing {
+    text-align: center;
+  }
+  
+    .landing p {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+} /* media query for 750px  */
 
 .contact-header {
   border-bottom: 2px solid #FDDC5C;
   text-align: center;
 }
 
+.featured-info h3 {
+  border-bottom: 1px solid rgb(128,128,128);
+}
+
+.featured-info p {
+  font-style: italic;
+}
+
+.featured-info ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+@media screen and (min-width: 1050px){
+  .featured-info {
+    float: left;
+    width: 30%;
+    margin-left: 3%;
+  }
+} /* media query for 1050px  */
+/* ---------------------------------------------------
+                   MyWork PAGE STYLES
+----------------------------------------------------*/
+.MyWork-page .featured-info ul {
+  font-style: italic;
+}
+
+.MyWork-page .featured-info {
+ /* float: none; */
+ text-align: center;
+ max-width: 400px;
+ margin-left: auto;
+ margin-right: auto;
+}
+.MyWork-page footer{
+  display: block;
+  text-align: left;
+}
+/* ---------------------------------------------------
+             HOME PAGE STYLES
+----------------------------------------------------*/
+@media screen and (min-width: 1050px){
+  
+  .home-page .featured-info {
+    float: none;
+    width: 100%;
+  }
+  
+  .home-page .landing {
+    float: left;
+    text-align: left;
+    width: 56%;
+  }
+  
+    .home-page .landing p {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  .home-page .sidebar {
+    float: right;
+    width: 30%;
+  }
+}
+/* ---------------------------------------------------
+                      FORM STYLES
+----------------------------------------------------*/
 form {
   margin: 50px auto;
   width: 90%;
@@ -162,6 +219,9 @@ form {
 .form-item button {
   width: 100px;
 }
+/* ---------------------------------------------------
+                      LOGO STYLES
+----------------------------------------------------*/
 .logo-center{
 
   display: flex;
@@ -200,7 +260,7 @@ footer{
 /* ---------------------------------------------------
                       BackGrounds
 ----------------------------------------------------*/
-body.home-body{ 
+body.home-page{ 
   display:flex;
   flex-direction: column;
   background: linear-gradient(

@@ -7,58 +7,69 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="home-MyWork">
-    <header>
-        <div class="logo-center">
-            <a href="index.html" ><img  class="logo"src="images/FaceLogo.jpg"></a> 
+<body class="MyWork-page">
+    <div class="container">
+        <header class='contact-header'>
+        <header>
+            <div class="logo-center">
+                <a href="index.html" ><img  class="logo"src="images/FaceLogo.jpg"></a> 
+            </div>
+            <nav class="main-navigation">
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="MyWork.html">My Work</a></li>
+                </ul>
+            </nav>
+        </header>    
+
+        <div class="landing">
+            <h1>My Projects:</h1>
+            <h2>Electrical Projects:</h2>
+            <p>In my free time I have designed some embedded electronics projects with microcontrollers such as 
+                MSP430, ATmega16A, Arduino board, and Raspberry Pi. 
+                Through these projects I implemented different concepts of ADC, Comparator, 
+                UART/SPI/I2C, Timer. Some of my projects are listed below. 
+            </p>
         </div>
-        <nav class="main-navigation">
+
+        <div class="about-images">
+            <img src="images/Robot.jpg" alt="LineFollower Robot">
+            <img src="images/SnakeGame.png" alt="Snake Game">
+        </div>
+        <div class="featured-info">
+            <h3>A musical Snake Game including:</h3>
             <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contacts</a></li>
-              <li><a href="MyWork.html">My Work</a></li>
+                <li>MSP430 microcontrollers</li>
+                <li>8 by 8 led matrix</li>
+                <li>Joy Stick</li>   
+                <li>Speaker to play music </li>            
             </ul>
-          </nav>
-    </header>    
+        </div>
 
-<div>
-    <h1>My Projects:</h1>
-    <h2>Electrical Projects:</h2>
-    <p>In my free time I have designed some embedded electronics projects with microcontrollers such as 
-        MSP430, ATmega16A, Arduino board, and Raspberry Pi. 
-        Through these projects I implemented different concepts of ADC, Comparator, 
-        UART/SPI/I2C, Timer. Some of my projects are listed below. 
-    </p>
-</div>
+        <div class="featured-info">
+        <h3>Line follower Robot including</h3>
+        <ul>
+            <li>Arduino UNO (or Arduino Nano)</li>
+            <li>LCD</li>
+            <li>DC motors</li>
+            <li>L293D Motor Driver IC </li>
+            <li>Ultrasonic sensor to avoid the obstacle</li>
+            <li>IR sensors</li>
+        </ul>
+        </div>
 
-<div class="about-images">
-    <img src="images/Robot.jpg" alt="LineFollower Robot">
-    <img src="images/SnakeGame.png" alt="Snake Game">
-</div>
-<div>
-    <h3>A musical Snake Game including:</h3>
-    <ul>
-        <li>MSP430 microcontrollers</li>
-        <li>8 by 8 led matrix</li>
-        <li>Joy Stick</li>   
-        <li>Speaker to play music </li>            
-    </ul>
-</div>
-
-<div>
-<h3>Line follower Robot including</h3>
-<ul>
-    <li>Arduino UNO (or Arduino Nano)</li>
-    <li>LCD</li>
-    <li>DC motors</li>
-    <li>L293D Motor Driver IC </li>
-    <li>Ultrasonic sensor to avoid the obstacle</li>
-    <li>IR sensors</li>
-</ul>
-</div>
-<footer>
-    <p>Made by Elnaz &copy 2020</p>
-</footer>
+        <div class="featured-info">
+            <h3>My Portfolio Website</h3>
+            <p>As the part of She Codes Plus Cohort, I learned how to go from basic HTML and CSS knowledge and created
+                my portfolio responsive website from the ground up using a mobile-first approach.
+            </p>
+        </div>
+        <footer>
+            <h4>Contact Me</h4>
+            <p>Made by Elnaz &copy 2020</p>
+        </footer>
+    </div>
 </body>
 </html>
