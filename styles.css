@@ -20,8 +20,10 @@ GREEN: rgb(157,150,106)
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;600;800;900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
-body{
+body {
   padding: 2% 6% 6% 6%;
+  font-size: 19px;
+  font-weight: 100;
 }
 @media screen and (min-width: 750px){
   body {
@@ -36,15 +38,43 @@ body{
 section, article, aside, footer, header, nav {
   display: block;
 }
-h1, h2, h3, h4, h4, h5, h6 {
-  /* font-family: 'Raleway', sans-serif; */
-  font-family: 'OCR A Std', monospace;
-  color: #343434;
+h1, h2, h3 {
+  font-family: "double-pica-sc", Garamond, "Baskerville Old Face", "Times New Roman", serif;
+  font-weight: normal;
+}
+h1 {
+  font-size: 3.3684em;
+  line-height: 1.2656em;
+  margin-top: 0.4219em;
+  margin-bottom: 0;
+  color: rgb(172, 140, 71);
+}
+.home-contact h1{
+  text-align: center;
+}
+/* .landing h1{
+  text-align: center;} */
+
+h2 {
+  font-size: 1.5em;
+  line-height: 1.2558em;
+  margin: 0.4219em auto 0.4219em auto;
+}
+
+h3 {
+  font-size: 1.5263em;
+  font-weight: normal;
+  line-height: 1.8621em;
+  margin-top: 0.9310em;
+  margin-bottom: 0;
 }
 
 p, a, label, button {
   font-family: 'Indie flower', sans-serif;
   color: #343434;
+}
+li {
+  font-weight: 100;
 }
 p {
   font-size: 1em;
@@ -103,7 +133,7 @@ label, button {
 } /* media query for 750px  */
 
 .contact-header {
-  border-bottom: 2px solid #FDDC5C;
+  /* border-bottom: 2px solid #FDDC5C; */
   text-align: center;
 }
 
@@ -113,6 +143,7 @@ label, button {
 
 .featured-info p {
   font-style: italic;
+  font-size: 20px;
 }
 
 .featured-info ul {
@@ -133,18 +164,14 @@ label, button {
 .MyWork-page .featured-info ul {
   font-style: italic;
 }
-/* 
-.MyWork-page .featured-info {
- float: none;
- text-align: center;
- max-width: 400px;
- margin-left: auto;
- margin-right: auto;
-} */
-.MyWork-page footer{
+
+.MyWork-page .featured-info, .landing, p ,li{
+  font-size: 25px;
+} 
+/* .MyWork-page footer{
   display: block;
   text-align: left;
-}
+} */
 /* ---------------------------------------------------
              HOME PAGE STYLES
 ----------------------------------------------------*/
@@ -164,6 +191,7 @@ label, button {
     .home-page .landing p {
       margin-left: 0;
       margin-right: 0;
+      font-size: 30px;
     }
   .home-page .sidebar {
     float: right;
@@ -216,26 +244,27 @@ form {
 .form-item input,
 .form-item textarea {
   flex-basis: 50%;
-  border: 2px solid #FDDC5C;
+  border: 2px solid rgb(152, 157, 106)C;
 }
 
 .form-item input:hover,
 .form-item textarea:hover {
-  border: 2px solid #FA4224;
+  border: 2px solid rgb(119, 97, 48);
 }
 
 .form-item input,
 .form-item textarea,
 .form-item button {
-  border: 2px solid #FDDC5C;
+  border: 2px solid rgb(152, 157, 106);
+  border-radius: 25px;
   background-color: #FFF;
   padding: 5px;
   font-size: 18px;
 }
 
 .form-item button:hover {
-  border: 2px solid #FA4224;
-  background-color: #FA4224;
+  border: 2px solid rgb(119, 97, 48);
+  background-color: rgb(119, 97, 48);
   color: #FFF;
 }
 
@@ -266,7 +295,7 @@ form {
   justify-content: start;
 }
 .logo{
-  border: 2px solid  #FDDC5C;
+  border: 2px solid  rgb(194, 121, 88);
   border-radius: 50px 20px;
 }
 .about-images img{
@@ -274,7 +303,7 @@ form {
   flex-direction: column;
   width:"1";
   height: "1";
-  border: 2px solid  #FDDC5C;
+  border: 2px solid  rgb(194, 121, 88);
   border-radius: 50px 20px;
 
 }
@@ -283,14 +312,31 @@ form {
 ----------------------------------------------------*/
 footer{
   padding: 10px 0;
-  border-top: 1px solid rgb(36,36,36);
+  /* border-top: 1px solid rgb(36,36,36); */
 }
   footer h4{
     text-transform: uppercase;
+    margin: 0px;
   }
   footer p{
     margin: 0;
   }
+@media screen and (min-width: 1050px){
+  .home-page footer {
+    padding-top: 300px;
+    float: left;
+    width: 30%; 
+  }
+  .about-page footer {
+    padding-top: 0px;
+    float: left;
+    width: 100%;
+  }
+  .MyWork-page footer {
+    float: left;
+    width: 100%;
+  }
+}
 /* ---------------------------------------------------
                       BackGrounds
 ----------------------------------------------------*/
@@ -322,7 +368,7 @@ body.home-contact{
   /* background-position: right top; */
   border-radius: 25px;
 }
-body.home-about{ 
+body.about-page{ 
   display:flex;
   flex-direction: column;
   background: linear-gradient(
@@ -371,11 +417,6 @@ body.MyWork-page{
   color: white; /* White text color */
   border-radius: 20px;
 }
-/* ORANGE: rgb(230, 170, 119)
-BROWN: rgb(194, 121, 88)
-PINK: rgb(225,174,153)
-      rgb(228,207,190)
-GREEN: rgb(157,150,106) */
 .C {width: 90%; background-color: rgb(225,174,153);} /* Green */
 .python {width: 80%; background-color: rgb(157,150,106,0.75);} /* Green */
 .git {width: 100%; background-color: rgb(252, 193, 144);} /* Green */
@@ -399,6 +440,8 @@ GREEN: rgb(157,150,106) */
 }
 
 .main-navigation a {
+  font-size: 25px;
+  font-weight: 600;
   display: block;
   padding: 15px 10px;
   text-decoration: none;
@@ -412,7 +455,7 @@ GREEN: rgb(157,150,106) */
   }
 
   .main-navigation a:hover {
-    color: rgb(8, 211, 18);
+    color: rgb(119, 97, 48);
     transition: .5s color;
     background: rgba(62, 61, 61, 0.51);
   }
@@ -462,17 +505,22 @@ GREEN: rgb(157,150,106) */
 ----------------------------------------------------*/
 .carousel{
   position: relative;
-  height: 600px;
-  width: 80%;
+  height: 500px;
+  width: 60%;
   margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 50px 50px;
 }
 .carousel__image{
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border: 5px solid  rgb(194, 121, 88);
+  border-radius: 50px 50px;
 }
 .carousel__track-container{
-  background: lightgreen;
+  /* background: lightgreen; */
   /* padding:10px; */
   height: 100%;
   position: relative;
