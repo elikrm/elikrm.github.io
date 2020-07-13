@@ -3,15 +3,13 @@ const slides = Array.from(track.children);
 const nextButton = document.querySelector('.carousel__button--right');
 const prevButton = document.querySelector('.carousel__button--left');
 const dotsNav = document.querySelector('.carousel__nav');
-
 const dots =Array.from(dotsNav.children);
-
 const slidewidth = slides[0].getBoundingClientRect().width;
+
 //arrage slides next to another
 function setSlidePosition(slide,index)
 {
     slide.style.left = slidewidth * index +  'px';
-    return( slide.style.left);
 }
 slides.forEach(setSlidePosition);
 function moveToSlide(track, currentSlide, targetSlide)
