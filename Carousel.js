@@ -8,20 +8,25 @@ const dots =Array.from(dotsNav.children);
 
 const slidewidth = slides[0].getBoundingClientRect().width;
 //arrage slides next to another
-const setSlidePosition = (slide,index) => {
+function setSlidePosition(slide,index)
+{
     slide.style.left = slidewidth * index +  'px';
+    return( slide.style.left);
 }
 slides.forEach(setSlidePosition);
-const moveToSlide =(track, currentSlide, targetSlide) =>{
+function moveToSlide(track, currentSlide, targetSlide)
+{
     track.style.transform = 'translateX(-'+ targetSlide.style.left+')';
     currentSlide.classList.remove('current-slide');
     targetSlide.classList.add('current-slide');
 }
-const updateDots =(currentDot,targetDot) =>{
+function updateDots(currentDot,targetDot)
+{
     currentDot.classList.remove('current-slide');
     targetDot.classList.add('current-slide');
 }
-const HideShowArrows = (slides,prevButton,nextButton,targetIndex) =>{
+function HideShowArrows(slides,prevButton,nextButton,targetIndex)
+{
     if(targetIndex === 0)
     {
         prevButton.classList.add('is-hidden');
@@ -52,7 +57,8 @@ prevButton.addEventListener('click',e => {
     HideShowArrows(slides,prevButton,nextButton,prevIndex);
 })
 //when I click right move slides to the right
-nextButton.addEventListener('click',e => {
+nextButton.addEventListener('click',e => 
+{
     const currentSlide = track.querySelector('.current-slide');
     const nextSlide = currentSlide.nextElementSibling;
     moveToSlide(track, currentSlide, nextSlide);
