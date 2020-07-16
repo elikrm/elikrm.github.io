@@ -218,7 +218,7 @@ label, button {
   }
 
   .button a:hover {
-    background-color: rgb(119, 97, 48);
+    background-color: rgb(212, 101, 3);
     border-radius: 8px;
   }
 /* ---------------------------------------------------
@@ -233,7 +233,7 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5px;
+  padding: 20px;
 }
 
 .form-item label {
@@ -249,7 +249,7 @@ form {
 
 .form-item input:hover,
 .form-item textarea:hover {
-  border: 2px solid rgb(119, 97, 48);
+  border: 2px solid rgb(204, 226, 7);
 }
 
 .form-item input,
@@ -263,14 +263,24 @@ form {
 }
 
 .form-item button:hover {
-  border: 2px solid rgb(119, 97, 48);
-  background-color: rgb(119, 97, 48);
+  border: 2px solid  rgb(204, 226, 7);
+  background-color:  rgb(204, 226, 7);
   color: #FFF;
+}
+.form-item button:hover {
+  background: rgb(204, 226, 7);
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgb(204, 226, 7),
+              0 0 25px rgb(204, 226, 7),
+              0 0 50px rgb(204, 226, 7),
+              0 0 100px rgb(204, 226, 7);
 }
 
 .form-item button {
   width: 100px;
 }
+
 /* ---------------------------------------------------
                       CONTACT ICON STYLES
 ----------------------------------------------------*/
@@ -447,21 +457,21 @@ body.MyWork-page{
   text-decoration: none;
   text-transform: uppercase;
   background: rgba(67,67,67,0.17);
-  color: rgb(180,180,180);
+  color: rgb(247, 199, 199);
 }
 
   .main-navigation a:visited {
-    color: rgb(106,106,106);
+    color: rgb(122, 42, 42);
   }
 
   .main-navigation a:hover {
-    color: rgb(119, 97, 48);
+    color: rgb(212, 101, 3);
     transition: .5s color;
     background: rgba(62, 61, 61, 0.51);
   }
 
   .main-navigation a:active {
-    color: rgb(172,140,71);
+    color: rgb(214, 165, 60);
   }
 
 @media screen and (min-width: 750px){
