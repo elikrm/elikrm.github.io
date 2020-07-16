@@ -1,5 +1,3 @@
-
-
 form .form-item  button {
   border: 2px solid rgb(152, 157, 106);
   border-radius: 25px;
@@ -8,7 +6,7 @@ form .form-item  button {
   text-align: center;
   display: inline-block;
   padding: 10px 20px;
-  color: rgb(204, 226, 7);
+  color: rgb(204, 101, 3);
   font-size: 16px;
   text-decoration: none;
   text-transform: uppercase;
@@ -19,13 +17,13 @@ form .form-item  button {
 }
 
 .form-item button:hover {
-  background: rgb(204, 226, 7);
+  background: rgb(204, 101, 3);
   color: #fff;
   border-radius: 5px;
-  box-shadow: 0 0 5px rgb(204, 226, 7),
-              0 0 25px rgb(204, 226, 7),
-              0 0 50px rgb(204, 226, 7),
-              0 0 100px rgb(204, 226, 7);
+  box-shadow: 0 0 5px rgb(204, 101, 3),
+              0 0 25px rgb(204, 101, 3),
+              0 0 50px rgb(204, 101, 3),
+              0 0 100px rgb(204, 101, 3);
 }
 
 .form-item button span {
@@ -38,7 +36,7 @@ form .form-item  button {
   left: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(90deg, transparent, rgb(204, 226, 7));
+  background: linear-gradient(90deg, transparent, rgb(204, 101, 3));
   animation: btn-anim1 1s linear infinite;
 }
 
@@ -56,7 +54,7 @@ form .form-item  button {
   right: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(180deg, transparent, rgb(204, 226, 7));
+  background: linear-gradient(180deg, transparent, rgb(204, 101, 3));
   animation: btn-anim2 1s linear infinite;
   animation-delay: .25s
 }
@@ -75,7 +73,7 @@ form .form-item  button {
   right: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(270deg, transparent, rgb(204, 226, 7));
+  background: linear-gradient(270deg, transparent, rgb(204, 101, 3));
   animation: btn-anim3 1s linear infinite;
   animation-delay: .5s
 }
@@ -94,7 +92,7 @@ form .form-item  button {
   left: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(360deg, transparent, rgb(204, 226, 7));
+  background: linear-gradient(360deg, transparent, rgb(204, 101, 3));
   animation: btn-anim4 1s linear infinite;
   animation-delay: .75s
 }
