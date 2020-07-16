@@ -218,8 +218,18 @@ label, button {
   }
 
   .button a:hover {
-    background-color: rgb(212, 101, 3);
-    border-radius: 8px;
+    border: 2px solid  rgb(204, 101, 3);
+    background-color:  rgb(204, 101, 3);
+    color: #FFF;
+  }
+  .button:hover {
+    background: rgb(204, 101, 3);
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(204, 101, 3),
+                0 0 25px rgb(204, 101, 3),
+                0 0 50px rgb(204, 101, 3),
+                0 0 100px rgb(204, 101, 3);
   }
 /* ---------------------------------------------------
                       FORM STYLES

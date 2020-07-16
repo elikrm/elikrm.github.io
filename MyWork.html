@@ -39,13 +39,13 @@
             <div class="carousel__track-container">
                 <ul class="carousel__track">
                     <li class="carousel__slide current-slide">
-                        <img class="carousel__image" src="images/temperatureFan.jpg" alt="">
-                    </li>
-                    <li class="carousel__slide">
                         <img class="carousel__image" src="images/snakeGame.png" alt="">
                     </li>
                     <li class="carousel__slide">
                         <img class="carousel__image" src="images/Robot.jpg" alt="">
+                    </li>
+                    <li class="carousel__slide">
+                        <img class="carousel__image" src="images/temperatureFan.jpg" alt="">
                     </li>
                 </ul>
             </div>
@@ -58,41 +58,43 @@
                 <button class="carousel__indicator"></button>
             </div>
         </div>
-        <script src="Carousel.js"></script>
+        
 
         <!-- <div class="about-images">
             <img src="images/Robot.jpg" alt="LineFollower Robot">
             <img src="images/SnakeGame.png" alt="Snake Game">
         </div> -->
-        <div class="featured-info">
-            <h3>A musical Snake Game including:</h3>
-            <ul>
-                <li>MSP430 microcontrollers</li>
-                <li>8 by 8 led matrix</li>
-                <li>Joy Stick</li>   
-                <li>Speaker to play music </li>            
-            </ul>
+        <div class= "desc__track">
+            <div class="featured-info">
+                <h3>A musical Snake Game including:</h3>
+                <ul>
+                    <li>MSP430 microcontrollers</li>
+                    <li>8 by 8 led matrix</li>
+                    <li>Joy Stick</li>   
+                    <li>Speaker to play music </li>            
+                </ul>
+            </div>
+    
+            <div class="featured-info is-hidden">
+                <h3>Line follower Robot including</h3>
+                <ul>
+                    <li>Arduino UNO (or Arduino Nano)</li>
+                    <li>LCD</li>
+                    <li>DC motors</li>
+                    <li>L293D Motor Driver IC </li>
+                    <li>Ultrasonic sensor to avoid the obstacle</li>
+                    <li>IR sensors</li>
+                </ul>
+            </div>
+    
+            <div class="featured-info is-hidden">
+                <h3>Fan Speed Controlled by Temperature</h3>
+                <p>I designed a way to automatically control the speed of a DC fan according to the temperature read 
+                    by a LM35 sensor using the concept of the PWM and analog write.
+                </p>
+            </div>
         </div>
-
-        <div class="featured-info">
-            <h3>Line follower Robot including</h3>
-            <ul>
-                <li>Arduino UNO (or Arduino Nano)</li>
-                <li>LCD</li>
-                <li>DC motors</li>
-                <li>L293D Motor Driver IC </li>
-                <li>Ultrasonic sensor to avoid the obstacle</li>
-                <li>IR sensors</li>
-            </ul>
-        </div>
-
-        <div class="featured-info">
-            <h3>Fan Speed Controlled by Temperature</h3>
-            <p>I designed a way to automatically control the speed of a DC fan according to the temperature read 
-                by a LM35 sensor using the concept of the PWM and analog write.
-            </p>
-        </div>
-
+        <script src="Carousel.js"></script>
         <footer>
             <h4>Contact Me</h4>
             <div class = "icon-contact">

@@ -6,6 +6,10 @@ const dotsNav = document.querySelector('.carousel__nav');
 const dots =Array.from(dotsNav.children);
 const slidewidth = slides[0].getBoundingClientRect().width;
 
+const desc = document.getElementsByClassName('featured-info');
+
+
+
 //arrage slides next to another
 function setSlidePosition(slide,index)
 {
@@ -25,12 +29,12 @@ function updateDots(currentDot,targetDot)
 }
 function HideShowArrows(slides,prevButton,nextButton,targetIndex)
 {
-    if(targetIndex === 0)
+    if(targetIndex == 0)
     {
         prevButton.classList.add('is-hidden');
         nextButton.classList.remove('is-hidden');
     }
-    else if(targetIndex === slides.length -1)
+    else if(targetIndex == slides.length -1)
     {
         prevButton.classList.remove('is-hidden');
         nextButton.classList.add('is-hidden');
@@ -41,6 +45,7 @@ function HideShowArrows(slides,prevButton,nextButton,targetIndex)
         nextButton.classList.remove('is-hidden');
     }
 }
+
 //when I click left move slides to the left
 prevButton.addEventListener('click',e => {
     const currentSlide = track.querySelector('.current-slide');
@@ -53,6 +58,9 @@ prevButton.addEventListener('click',e => {
 
     const prevIndex = slides.findIndex(slide => slide == prevSlide);
     HideShowArrows(slides,prevButton,nextButton,prevIndex);
+    //update describtion
+    desc[prevIndex].classList.remove('is-hidden');
+    desc[prevIndex+1].classList.add('is-hidden');
 })
 //when I click right move slides to the right
 nextButton.addEventListener('click',e => 
@@ -67,10 +75,14 @@ nextButton.addEventListener('click',e =>
 
     const nextIndex = slides.findIndex(slide => slide == nextSlide);
     HideShowArrows(slides,prevButton,nextButton,nextIndex);
+    //update describtion
+    desc[nextIndex].classList.remove('is-hidden');
+    desc[nextIndex-1].classList.add('is-hidden');
 })
 
 //when I click nav indicater move slides to that side
 dotsNav.addEventListener('click',e => {
+
     //what indicator was clicked on
     const targetDot = e.target.closest('button');
     if(!targetDot) return;
@@ -78,8 +90,24 @@ dotsNav.addEventListener('click',e => {
     const currentDot = dotsNav.querySelector('.current-slide');
     const targetIndex = dots.findIndex(dot => dot == targetDot);
     const targetSlide = slides[targetIndex];
-    // console.log(dots);
+
+    let nextDot = currentDot.nextElementSibling;
+    let nextIndex = dots.findIndex(dot => dot == nextDot) + 1;
+
+    let prevDot = currentDot.previousElementSibling;
+    let prevIndex = dots.findIndex(dot => dot == prevDot) + 1;
+    
     moveToSlide(track, currentSlide, targetSlide);
     updateDots(currentDot,targetDot);
     HideShowArrows(slides,prevButton,nextButton,targetIndex);
+
+    // console.log(prevIndex);
+    // console.log(nextIndex);
+    // console.log(targetIndex)
+    // console.log(desc);
+ 
+    //update description
+    desc[targetIndex].classList.remove('is-hidden');
+    desc[prevIndex].classList.add('is-hidden');
+    
 })
