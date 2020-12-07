@@ -604,5 +604,13 @@ body.MyWork-page{
   height: 150px;}
   .carousel__image{
     width: 100%;
-    height: auto;}
+    height: auto;
+  }
+  .carousel__indicator{
+    width: 1px;
+    height: 1px;
+  }
+  .carousel__nav{
+    padding: 2px 0;
+  }
 }
