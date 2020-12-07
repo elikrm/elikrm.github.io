@@ -441,10 +441,11 @@ body.MyWork-page{
 .python {width: 80%; background-color: rgb(157,150,106,0.75);} /* Green */
 .git {width: 100%; background-color: rgb(252, 193, 144);} /* Green */
 .Cplus {width: 60%; background-color: rgb(230, 170, 119);} /* Green */
-.html {width: 50%; background-color: rgb(194, 121, 88,0.75);} /* Blue */
-.css {width: 50%; background-color: #86c6fa;} /* Blue */
-.React {width: 0%; background-color: #808080;} /* Dark Grey */
-.Django {width: 0%; background-color: #808080;} /* Dark Grey */
+.html {width: 90%; background-color: rgb(194, 121, 88,0.75);} /* Blue */
+.css {width: 90%; background-color: #86c6fa;} /* Blue */
+.React {width: 70%; background-color: #808080;} /* Dark Grey */
+.Django {width: 70%; background-color: rgb(157,150,106,0.75);} /* Dark Grey */
+.JS {width: 60%; background-color:rgb(225,174,153);} /* Dark Grey */
 /* ---------------------------------------------------
                 MAIN NAVIGATION STYLES
 ----------------------------------------------------*/
